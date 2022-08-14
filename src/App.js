@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import ClassState from './components/ClassState';
+import { MyNameDisplay } from './components/MyNameDisplay';
 
 function App() {
+
+  const myName="Mohammad Mateen";
+  const employee ={
+    name:'Athar',
+    age:31,
+    
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+   <>
+     {/*  <h1 className='App'>My name {myName}
+      <ClassState     myName='Mateen' />
+      
+      
+      
+      </h1> */}
+      <MyNameDisplay emp={employee} />
+
+   </>
   );
 }
 
